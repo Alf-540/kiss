@@ -1,0 +1,123 @@
+.list {
+  list-style: none;
+}
+.contacts-categories {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* or 22px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  justify-content: center;
+
+  color: #ffffff;
+  background: #f0d1a5;
+  border-radius: 4px;
+  width: 80px;
+  cursor: pointer;
+  border-style: none;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.contacts-city {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* or 22px */
+
+  letter-spacing: 0.04em;
+
+  color: #000000;
+  margin-bottom: 10px;
+}
+.contacts-about {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+
+  color: #907e82;
+  position: relative;
+}
+.line::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  display: block;
+  border: 1px solid #e1e1e1;
+  margin-top: 25px;
+}
+.time {
+  padding-left: 0;
+}
+.contacts-working-days {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* or 22px */
+
+  color: #000000;
+
+  margin-top: 50px;
+
+  margin-bottom: 0;
+}
+.contacts-working-weekends {
+  margin-top: 10px;
+}
+.contacts-weekend-hours {
+  position: relative;
+}
+.contacts-working-hours {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  /* identical to box height, or 22px */
+
+  color: #ffa5ba;
+  margin-top: 0;
+}
+.contacts-links {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+
+  color: #907e82;
+  padding-left: 0;
+  margin-top: 50px;
+}
+.contacts-tel {
+  color: #907e82;
+}
+.contacts-mail {
+  color: #907e82;
+}
+
+.address {
+  padding-top: 43px;
+  padding-bottom: 43px;
+  padding-left: 20px;
+  padding-right: 21px;
+  width: 220px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-bottom: 20px;
+}
