@@ -1,3 +1,37 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .section {
   padding-top: 6px;
   padding-left: 20px;
@@ -10,12 +44,10 @@
   width: 320px;
   background: #ffb8ca;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #d41443;
-}
-
-.header-logo {
-  // position: relative;
 }
 
 .header-burger__button {
@@ -40,7 +72,6 @@
 
 .header-ice-cream {
   position: absolute;
-  // right: calc((32 / 320) * 100%);
   left: 117px;
   bottom: 1px;
   z-index: 2;
@@ -68,7 +99,6 @@
 
 .header-title-block {
   width: 218px;
-  // padding-left: 20px;
   padding-top: 137px;
   display: block;
   position: absolute;
@@ -76,6 +106,8 @@
 }
 
 .header-btn-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -90,7 +122,9 @@
   font-weight: 400;
   font-size: 8px;
   line-height: calc(10 / 8);
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   background-color: #d41443;
   color: #ffffff;
@@ -106,7 +140,9 @@
   font-weight: 400;
   font-size: 8px;
   line-height: calc(10 / 8);
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   color: #d41443;
 }
@@ -116,3 +152,41 @@
   top: 318px;
   z-index: 3;
 }
+
+.title__hidden {
+  position: absolute !important;
+  clip: rect(1 px 1 px 1 px 1 px);
+  clip: rect(1 px, 1 px, 1 px, 1 px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1 px !important;
+  width: 1 px !important;
+  overflow: hidden;
+}
+
+.footer {
+  background: #fff5f6;
+}
+
+.footer__title {
+  color: #d41443;
+  padding-bottom: 43px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.footer__title > span {
+  color: #d41443;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=main.css.map */

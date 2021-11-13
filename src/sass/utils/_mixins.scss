@@ -1,0 +1,24 @@
+@mixin font($fs, $fw, $fz, $lh, $ls) {
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: ($lh / $fz);
+  letter-spacing: $ls;
+}
+
+@mixin flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin soc-ico-bgd() {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  border: 0px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
