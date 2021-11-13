@@ -1,9 +1,6 @@
 .footer {
     background: $second-bg-color;
 }
-.footer__title {
-
-}
 
 .footer__title-main {
     color: $text-title-color;
@@ -54,6 +51,7 @@
         line-height: 1.14;
       }
   }
+
 .soc-list {
     padding: 0px;
     display: flex;
@@ -96,6 +94,7 @@
   .copyright {
     display: block;
   }
+  
   .copy-text {
     font-family: DM Sans;
     font-weight: 700;
