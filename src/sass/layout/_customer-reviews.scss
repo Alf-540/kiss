@@ -1,0 +1,141 @@
+.reviews {
+    padding-top: 60px;
+    padding-bottom: 68px;
+}
+.container {
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reviews__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+     
+}
+.reviews__slide {
+
+    margin-bottom: 35px;
+}
+.reviews__img {
+    display: block;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 29px;
+}
+.reviews__thumb {
+    position: relative;
+   
+    text-align: center;
+    margin-bottom: 30px;
+    // padding: 43px 50px 20px;
+    padding: 43px 66px 26px 57px;
+    background-color: #FAFAFA;
+    
+
+&::before {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 40px;
+    margin: 0;
+    position: absolute;
+    top: 28px;
+    left: 61px;
+    background-image: url(https://w7.pngwing.com/pngs/32/189/png-transparent-double-quotes-quotation-marks-in-english-punctuation-double-quotes-monochrome-silhouette-internet-thumbnail.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+}
+.reviews__text {
+    position: relative;
+    display: inline;
+    padding-bottom: 6px;
+    // padding:0 12px 6px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    color: #000000;
+    background-image: repeating-linear-gradient(#E1E1E1, #E1E1E1);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+   
+}
+.decor {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #C7133E;
+    margin-right: auto;
+    margin-left: auto;
+     &::before {
+         position: absolute;
+         top: 0;
+         left: -10px;
+        content: "";
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #C7133E;
+     }
+     &::after {
+        position: absolute;
+        top: 0;
+        left: 10px;
+       content: "";
+           width: 4px;
+           height: 4px;
+           border-radius: 50%;
+           background-color: #C7133E;
+    }
+}
+.reviews__desc {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+    color: #000000;
+}
+.reviews__slide-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.reviews__slide-item {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #D9D9D9;
+    &:not(:last-child) {
+        margin-right: 18px;
+    }
+    &--current {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        background-color: transparent;
+    }
+}
