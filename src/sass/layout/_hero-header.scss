@@ -28,10 +28,10 @@
   left: 281px;
 }
 
-.elips {
+.ellips {
   position: absolute;
-  width: 346px;
-  height: 344px;
+  // width: 346px;
+  // height: 344px;
   left: 36px;
   top: 82.95px;
   overflow: hidden;
@@ -93,6 +93,7 @@
   align-items: center;
   text-align: center;
   background-color: #d41443;
+  // background-color: $text-title-color;
   color: #ffffff;
 }
 
@@ -109,6 +110,7 @@
   align-items: center;
   text-align: center;
   color: #d41443;
+  // color: $text-title-color;
 }
 
 .header-btn_block {
