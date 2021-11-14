@@ -103,7 +103,7 @@
 }
 
 }
-.reviews__text {
+.reviews__comment {
     @include font(normal, 500, 12px, 2.16, 0.04em);
     position: relative;
     display: inline;
@@ -126,7 +126,7 @@
       }
    
 }
-.decor {
+.reviews__deco {
     position: relative;
     display: block;
     margin-bottom: 30px;
@@ -159,7 +159,7 @@
         left: 10px;
     }
 }
-.reviews__desc {
+.reviews__subtitle {
 
     @include font(normal, 500, 14px, 1.86, 0.03em);
    
