@@ -5,6 +5,10 @@
         padding-top: 121px;
     padding-bottom: 119px;
     }
+    @media screen and (min-width: 1280px) {
+        padding-top: 123px;
+    padding-bottom: 132px;
+    }
 }
 .container {
     width: 320px;
@@ -19,9 +23,9 @@
       }
     
       @media screen and (min-width: 1280px) {
-        width: 1200px;
-        padding-left: 115px;
-        padding-right: 115px;
+        width: 1280px;
+        padding-left: 178px;
+        padding-right: 176px;
       }
 }
 // .reviews__title {
@@ -52,6 +56,9 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 19px;
     }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 15px;
+    }
 }
 .reviews__thumb {
     position: relative;
@@ -64,6 +71,10 @@
     @media screen and (min-width: 768px) {
         padding: 47px 80px 34px;
         margin-bottom: 24px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 47px 89px 39px 87px;
+        margin-bottom: 15px;
     }
     
 
@@ -85,6 +96,10 @@
         top: 30px;
         left: 40px;
       }
+      @media screen and (min-width: 1280px) {
+        top: 32px;
+        left: 50px;
+      }
 }
 
 }
@@ -105,6 +120,10 @@
     @media screen and (min-width: 768px) {
         @include font(normal, 500, 14px, 2.55, 0.04em);
       }
+      @media screen and (min-width: 1280px) {
+        @include font(normal, 500, 16px, 1.86, 0.04em);
+        padding-bottom: 7px;
+      }
    
 }
 .decor {
@@ -119,6 +138,9 @@
     margin-left: auto;
     @media screen and (min-width: 768px) {
         margin-bottom: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 15px;
     }
      &::before, &::after {
          position: absolute;
@@ -150,12 +172,16 @@
         @include font(normal, 500, 16px, 1.86, 0.03em);
       
     }
+    @media screen and (min-width: 1280px) {
+        @include font(normal, 500, 20px, 1.86, 0.03em);
+      
+    }
 }
 .reviews__slide-list {
     @include flex();
     // display: flex;
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
     // justify-content: center;
     // align-items: center;
 }
