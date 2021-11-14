@@ -39,3 +39,24 @@
   line-height: 1.66;
   letter-spacing: 0.04em;
 }
+.bucket::before {
+  content: '';
+  width: 33px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../src/images/advantages/advantages-bucket.png);
+}
+.apples::before {
+  content: '';
+  width: 33px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../src/images/advantages/advantages-apples.png);
+}
+.lollipop::before {
+  content: '';
+  width: 33px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../src/images/advantages/advantages-lollipop.png);
+}
