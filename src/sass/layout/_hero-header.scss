@@ -10,12 +10,28 @@
   width: 320px;
   background: #ffb8ca;
   position: relative;
-  display: flex;
+  // display: flex;
   border-bottom: 1px solid #d41443;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 399px;
+    border-bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    height: 665px;
+  }
 }
 
 .header-logo {
-  // position: relative;
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 37px;
+    padding-left: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 46px;
+  }
 }
 
 .header-burger__button {
@@ -26,6 +42,14 @@
   position: absolute;
   top: 23px;
   left: 281px;
+  @media screen and (min-width: 768px) {
+    top: 52px;
+    left: 524px;
+    z-index: 4;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .ellips {
@@ -36,6 +60,14 @@
   top: 82.95px;
   overflow: hidden;
   z-index: 1;
+  @media screen and (min-width: 768px) {
+    top: 31px;
+    left: 307px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 52px;
+    left: 475px;
+  }
 }
 
 .header-ice-cream {
@@ -44,6 +76,12 @@
   left: 117px;
   bottom: 1px;
   z-index: 2;
+  @media screen and (min-width: 768px) {
+    left: 378px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 594px;
+  }
 }
 
 .header-title {
@@ -54,6 +92,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: calc(25 / 22);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    line-height: calc(44 / 38);
+  }
 }
 
 .header-title span {
@@ -64,15 +110,36 @@
   letter-spacing: 0em;
   text-transform: uppercase;
   color: #d41443;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: calc(31 / 34);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: calc(52 / 58);
+  }
 }
 
 .header-title-block {
-  width: 218px;
-  // padding-left: 20px;
-  padding-top: 137px;
-  display: block;
-  position: absolute;
-  z-index: 3;
+  @media screen and (max-width: 767px) {
+    max-width: 218px;
+    // padding-left: 20px;
+    padding-top: 137px;
+    display: block;
+    position: absolute;
+    z-index: 3;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 15px;
+    padding-left: 34px;
+    padding-bottom: 20px;
+    max-width: 180px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 277px;
+    padding-top: 84px;
+    padding-left: 115px;
+  }
 }
 
 .header-btn-item {
@@ -95,6 +162,12 @@
   background-color: #d41443;
   // background-color: $text-title-color;
   color: #ffffff;
+  @media screen and (min-width: 1280px) {
+    width: 104px;
+    height: 40px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
 }
 
 .header-btn_how {
@@ -111,10 +184,55 @@
   text-align: center;
   color: #d41443;
   // color: $text-title-color;
+  @media screen and (min-width: 1280px) {
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
 }
 
 .header-btn_block {
   position: absolute;
   top: 318px;
   z-index: 3;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    padding-left: 34px;
+    top: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 115px;
+    padding-bottom: 112px;
+  }
+}
+.header-img-girl {
+  // outline: 2px solid black;
+  position: absolute;
+  bottom: 0;
+  left: 213px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 288px;
+  }
+}
+
+.header-text {
+  color: white;
+  width: 200px;
+  padding-left: 295px;
+  // padding-top: 112px;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  color: #ffffff;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 100px;
+  }
 }
