@@ -6,6 +6,7 @@
 }
 
 .header {
+  margin: 0 auto;
   height: 502px;
   width: 320px;
   background: #ffb8ca;
@@ -25,7 +26,7 @@
 
 .header-logo {
   @media screen and (min-width: 768px) {
-    display: block;
+    display: flex;
     padding-top: 37px;
     padding-left: 34px;
   }
@@ -50,6 +51,40 @@
   @media screen and (min-width: 1280px) {
     display: none;
   }
+}
+
+.header-menu-block {
+  display: flex;
+  align-items: center;
+}
+
+.header-buy-btn {
+  height: 44px;
+  width: 160px;
+  border: none;
+  border-radius: 22px;
+  background-color: #fff;
+  // margin-right: 9px;
+}
+
+.header_logo {
+  // display: flex;
+  // align-items: center;
+}
+
+.header-btn-buy-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  // align-items: baseline;
+  text-align: center;
+  justify-content: center;
+  color: #d41443;
+  vertical-align: center;
 }
 
 .ellips {
