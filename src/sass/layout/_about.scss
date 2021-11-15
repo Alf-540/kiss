@@ -1,11 +1,28 @@
 .about {
-    background: #FFF5F6;
+    background-image: url(../images/about/about-milk-mob-1x.png);
+    background-color: $second-bg-color;
+    background-repeat: no-repeat;
+    background-position: bottom 50px left 0;
+    background-size: contain;
     padding-top: 125px;
+    padding-bottom: 39px;
     width: 100%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/about/about-milk-mob-2x.png);
+    }
     @media screen and (min-width: 768px) {
         padding-top: 130px;
+        background-image: none;
+        padding-bottom: 66px;
     }
-    @media screen and (min-width: 1280px) {}
+    @media screen and (min-width: 1280px) {
+        background-image: url(../images/about/about-milk-des-1x.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/about/about-milk-des-2x.png);
+        }
+        background-position: bottom;
+        padding-bottom: 39px;
+    }
 }
 
 .about-preheading {
@@ -16,7 +33,7 @@
     line-height: 1.16;
     text-align: center;
     text-transform: uppercase;
-    color: #FFA5BA;
+    color: $second-hero-bg-color;
     margin-top: 0;
     margin-bottom: 15px;
     @media screen and (min-width: 768px) {
@@ -40,7 +57,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #D41443;
+    color: $text-title-color;
     margin-top: 0;
     margin-bottom: 26px;
     @media screen and (min-width: 768px) {
@@ -102,7 +119,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
-    color: #000000;
+    color: $main-text-color;
     margin-top: 0;
     margin-bottom: 40px;
     @media screen and (min-width: 768px) {
@@ -123,7 +140,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 162%;
-    color: #907E82;
+    color: $second-text-color;
     margin-top: 0;
     margin-bottom: 20px;
     @media screen and (min-width: 768px) {
@@ -151,10 +168,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #D41443;
+    color: $text-title-color;
     cursor: pointer;
     &:hover,
     &:focus {
-        background: #ECEBEB;
+        background: $contacts-button-hover;
     }
+}
+
+.about-btn-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14px;
+    width: 5px;
+    height: 10px;
+    fill: $text-title-color;
 }
