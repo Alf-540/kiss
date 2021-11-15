@@ -4,21 +4,35 @@
 }
 
 .footer__content {
+  padding-top: 57px;
   @media screen and (min-width: 768px) {
+    padding-top: 85px;
     display: flex;
     justify-content: space-between;
   }
 
   @media screen and (min-width: 1280px) {
+    padding-top: 85px;
     display: flex;
     justify-content: space-between;
   }
 }
 
 .footer__title {
+  
   font-family: Titan One;
   text-transform: uppercase;
   font-weight: normal;
+  animation: fadein 2s;
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     width: 340px;
@@ -156,6 +170,21 @@
   margin-left: 4px;
   color: $text-title-color;
 }
+
+// .topNubex {
+//   position: fixed;
+//   right: 430px;
+//   bottom: 75px;
+//   padding: 5px;
+//   text-decoration: none;
+
+//   border: 2px solid $text-title-color;
+//   border-radius: 50%;
+//   font-family: Titan One;
+//   font-size: 48px;
+//   line-height: 1.16;
+//   color: $text-title-color
+// }
 
 .copyright {
   display: block;
