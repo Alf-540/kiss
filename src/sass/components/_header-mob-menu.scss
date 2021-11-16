@@ -20,7 +20,6 @@
 a {
   color: inherit;
 }
-
 .header-menu-btn {
   height: 44px;
   width: 209px;
@@ -32,16 +31,10 @@ a {
   top: 60px;
   margin-bottom: 32px;
   margin-left: 21px;
-
   @media screen and (min-width: 768px) {
-    display: none;
+  display: none;
   }
-  //   @media screen and (min-width: 768px) {
-  //     position: absolute;
-  //     top: 38px;
-  //     z-index: 2;
-  //   }
-}
+ }
 
 .mob-menu-item {
   font-weight: 700;
