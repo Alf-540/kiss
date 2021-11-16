@@ -3,10 +3,6 @@
   position: relative;
 }
 
-// .link {
-//   text-decoration: none;
-// }
-
 .header {
   margin: 0 auto;
   height: 502px;
@@ -39,7 +35,7 @@
   }
 }
 
-.header_navi-item {
+.header_navi-list {
   display: flex;
   // padding-top: 49px;
   padding-left: 230px;
@@ -51,7 +47,7 @@
   }
 }
 
-.header_navi-list {
+.header_navi-item {
   margin-right: 35px;
   // font-family: DM Sans;
   font-weight: 700;
