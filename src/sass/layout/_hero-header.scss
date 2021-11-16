@@ -2,7 +2,6 @@
   padding-top: 6px;
   position: relative;
 }
-
 .header {
   background: #ffb8ca;
 }
@@ -12,7 +11,6 @@
   height: 502px;
   width: 320px;
   position: relative;
-  // display: flex;
   border-bottom: 1px solid #d41443;
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -24,7 +22,6 @@
     height: 665px;
   }
 }
-
 .header-logo {
   width: 199px;
   @media screen and (min-width: 768px) {
@@ -37,10 +34,8 @@
     left: 36px;
   }
 }
-
 .header_navi-list {
   display: flex;
-  // padding-top: 49px;
   padding-left: 230px;
   @media screen and (max-width: 479px) {
     displaay: none;
@@ -49,10 +44,8 @@
     padding-top: 49px;
   }
 }
-
 .header_navi-item {
   margin-right: 35px;
-  // font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(21 / 16);
@@ -88,19 +81,16 @@
     display: none;
   }
 }
-
 .header-menu-block {
   display: flex;
   align-items: center;
 }
-
 .header-buy-btn {
   height: 44px;
   width: 160px;
   border: none;
   border-radius: 22px;
   background-color: #fff;
-  // margin-right: 9px;
   transition: color 300ms linear;
   @media screen and (max-width: 767px) {
     display: none;
@@ -140,9 +130,7 @@
   vertical-align: center;
   padding: 12px;
 }
-
 .ellips {
-  // outline: 2px solid red;
   position: absolute;
   margin-left: 20px;
   width: 280px;
@@ -171,7 +159,6 @@
     z-index: 1;
   }
 }
-
 .header-ice-cream {
   position: absolute;
   // right: calc((32 / 320) * 100%);
@@ -185,7 +172,6 @@
     left: 594px;
   }
 }
-
 .header-title {
   font-family: Titan One;
   font-weight: 400;
@@ -204,7 +190,6 @@
     width: 300px;
   }
 }
-
 .header-title span {
   font-family: Titan One;
   font-weight: 400;
@@ -222,7 +207,6 @@
     line-height: calc(52 / 58);
   }
 }
-
 .header-title-block {
   @media screen and (max-width: 767px) {
     max-width: 218px;
@@ -241,11 +225,9 @@
     padding-top: 84px;
   }
 }
-
 .header-btn-item {
   display: flex;
 }
-
 .header-btn_prod {
   width: 63px;
   height: 24px;
@@ -260,7 +242,6 @@
   align-items: center;
   text-align: center;
   background-color: #d41443;
-  // background-color: $text-title-color;
   color: #ffffff;
   @media screen and (min-width: 1280px) {
     width: 104px;
@@ -269,7 +250,6 @@
     line-height: calc(18 / 14);
   }
 }
-
 .header-btn_how {
   width: 83px;
   height: 24px;
@@ -290,6 +270,7 @@
   //   border-radius: 24px;
   //   background-color: #ecebeb;
   // }
+
   @media screen and (min-width: 1280px) {
     width: 138px;
     height: 40px;
@@ -319,7 +300,6 @@
     padding-bottom: 112px;
   }
 }
-
 .hero-milk {
   position: absolute;
   left: 34px;
@@ -333,9 +313,7 @@
     bottom: 45px;
   }
 }
-
 .header-img-girl {
-  // outline: 2px solid black;
   position: absolute;
   bottom: 0;
   left: 177px;
@@ -347,7 +325,6 @@
     left: 288px;
   }
 }
-
 .hero-text {
   display: block;
   color: white;
@@ -372,9 +349,7 @@
     width: 380px;
   }
 }
-
 .hero-arrow-btn {
-  // outline: 2px solid red;
   display: block;
   margin: 0 auto;
   cursor: pointer;
@@ -386,7 +361,6 @@
   margin-right: 0;
   height: 26px;
   width: 26px;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -403,7 +377,6 @@
     margin-left: 180px;
   }
 }
-
 .header-cafetracks {
   display: flex;
   flex-wrap: wrap;
@@ -415,7 +388,6 @@
   right: 34px;
   align-items: center;
   margin-bottom: 13px;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -423,5 +395,56 @@
     width: 92px;
     top: 156px;
     right: 97px;
+  }
+}
+.cafetrucks-list__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+.cafetrucks-list__text--padding {
+  padding-left: 20px;
+}
+.cafetrucks-list__number {
+  position: relative;
+  color: $text-title-color;
+  font-family: Titan One;
+  font-style: Regular;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  z-index: 3;
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.14;
+  }
+}
+
+.cafetrucks-list__text {
+  color: #ffffff;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+.cafetrucks-list__number::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  z-index: -1;
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+
+    right: 5px;
   }
 }
