@@ -1,266 +1,268 @@
 .about {
-    background-image: url(../images/about/about-milk-mob-1x.png);
-    background-color: $second-bg-color;
-    background-repeat: no-repeat;
-    background-position: bottom 50px left 0;
-    background-size: contain;
-    padding-top: 125px;
-    padding-bottom: 39px;
-    width: 100%;
+  background-image: url(../images/about/about-milk-mob-1x.png);
+  background-color: $second-bg-color;
+  background-repeat: no-repeat;
+  background-position: bottom 50px left 0;
+  background-size: contain;
+  padding-top: 125px;
+  padding-bottom: 39px;
+  width: 100%;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/about/about-milk-mob-2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    background-image: none;
+    padding-bottom: 66px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/about/about-milk-des-1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/about/about-milk-mob-2x.png);
+      background-image: url(../images/about/about-milk-des-2x.png);
     }
-    @media screen and (min-width: 768px) {
-        padding-top: 130px;
-        background-image: none;
-        padding-bottom: 66px;
-    }
-    @media screen and (min-width: 1280px) {
-        background-image: url(../images/about/about-milk-des-1x.png);
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/about/about-milk-des-2x.png);
-        }
-        background-position: bottom;
-        padding-bottom: 39px;
-    }
+    background-position: bottom;
+    padding-bottom: 39px;
+  }
 }
 
 .about-preheading {
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.16;
-    text-align: center;
-    text-transform: uppercase;
-    color: $second-hero-bg-color;
-    margin-top: 0;
-    margin-bottom: 15px;
-    @media screen and (min-width: 768px) {
-        font-size: 26px;
-        line-height: 1.15;
-        margin-bottom: 16px;
-    }
-    @media screen and (min-width: 1280px) {
-        font-size: 30px;
-        line-height: 1.13;
-        letter-spacing: 0.04em;
-    }
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: $second-hero-bg-color;
+  margin-top: 0;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
 }
 
 .about-heading {
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 34px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-title-color;
+  margin-top: 0;
+  margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
     line-height: 1.14;
-    text-align: center;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $text-title-color;
-    margin-top: 0;
-    margin-bottom: 26px;
-    @media screen and (min-width: 768px) {
-        font-size: 48px;
-        line-height: 1.14;
-        letter-spacing: 0.04em;
-        margin-bottom: 50px;
-    }
-    @media screen and (min-width: 1280px) {
-        font-size: 58px;
-        line-height: 1.13;
-        letter-spacing: 0.06em;
-        margin-bottom: 55px;
-    }
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+    margin-bottom: 55px;
+  }
 }
 
 .about-main {
-    @media screen and (min-width: 768px) {
-        display: flex;
-    }
-    @media screen and (min-width: 1280px) {}
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1280px) {
+  }
 }
 
 .about-img {
-    display: block;
-    width: 280px;
-    margin-bottom: 46px;
-    margin: 0 auto;
-    margin-bottom: 46px;
-    @media screen and (min-width: 768px) {
-        width: 340px;
-        height: 339px;
-        margin-right: 17px;
-    }
-    @media screen and (min-width: 1280px) {
-        width: 516px;
-        height: 516px;
-        margin-right: 74px;
-        margin-bottom: 0;
-    }
+  display: block;
+  width: 280px;
+  margin-bottom: 46px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    height: 339px;
+    margin-right: 17px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 516px;
+    height: 516px;
+    margin-right: 74px;
+    margin-bottom: 0;
+  }
 }
 
 .about-text {
-    width: 220px;
-    margin: 0 auto;
-    @media screen and (min-width: 768px) {
-        padding-top: 50px;
-        width: 340px;
-    }
-    @media screen and (min-width: 1280px) {
-        padding-top: 51px;
-        width: 463px;
-    }
+  width: 220px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    width: 340px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 51px;
+    width: 463px;
+  }
 }
 
 .about-primary-text {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $main-text-color;
+  margin-top: 0;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
     line-height: 1.62;
-    color: $main-text-color;
-    margin-top: 0;
-    margin-bottom: 40px;
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.76;
-    }
-    @media screen and (min-width: 1280px) {
-        font-size: 16px;
-        line-height: 1.62;
-        letter-spacing: 0.04em;
-        margin-bottom: 35px;
-    }
+    letter-spacing: 0.04em;
+    margin-bottom: 35px;
+  }
 }
 
 .about-seckondary-text {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 162%;
-    color: $second-text-color;
-    margin-top: 0;
-    margin-bottom: 20px;
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.76;
-        letter-spacing: 0.04em;
-    }
-    @media screen and (min-width: 1280px) {
-        font-size: 14px;
-        line-height: 1.94;
-        letter-spacing: 0.04em;
-        margin-bottom: 45px;
-    }
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: $second-text-color;
+  margin-top: 0;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.94;
+    letter-spacing: 0.04em;
+    margin-bottom: 45px;
+  }
 }
 
 .about-btn {
-    width: 176px;
-    height: 44px;
-    background: #FFFFFF;
-    border-radius: 22px;
-    border: none;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.28;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $text-title-color;
-    cursor: pointer;
-    &:hover,
-    &:focus {
-        background: $contacts-button-hover;
-    }
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $text-title-color;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: $contacts-button-hover;
+  }
 }
 
 .about-btn-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 14px;
-    width: 5px;
-    height: 10px;
-    fill: $text-title-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  width: 6px;
+  height: 10px;
+  fill: $text-title-color;
 }
 
 // -----------about modal styles---------------
 .backdrop-modal {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &.is-hidden {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .about-modal {
-    position: relative;
-    width: 400px;
-    min-height: 400px;
-    margin-top: 50px;
-    margin-bottom: auto;
-    background-color: $menu-bg-color;
-    background-image: url('../images/about/about-milk-des-1x.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 3px solid #FFFFFF;
-    border-radius: 10px;
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/about/about-milk-des-2x.png);
-    }
-    @media screen and (min-width: 768px) {
-        width: 700px;
-    }
-    @media screen and (min-width: 1280px) {
-        width: 900px;
-    }
+  position: relative;
+  width: 400px;
+  min-height: 400px;
+  margin-top: 50px;
+  margin-bottom: auto;
+  background-color: $menu-bg-color;
+  background-image: url('../images/about/about-milk-des-1x.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/about/about-milk-des-2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    width: 700px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 900px;
+  }
 }
 
 .about-close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    background-color: $menu-bg-color;
-    border: 2px solid$second-bg-color;
-    cursor: pointer;
-    transition-property: background-color, color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus,
-    &:hover {
-        background-color: $main-text-color;
-    }
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: $menu-bg-color;
+  border: 2px solid$second-bg-color;
+  cursor: pointer;
+  transition-property: background-color, color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: $main-text-color;
+  }
 }
 
 .about-modal-titele {
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 34px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $text-title-color;
-    margin-bottom: 20px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-title-color;
+  margin-bottom: 20px;
 }
