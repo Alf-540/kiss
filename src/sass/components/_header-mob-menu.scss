@@ -1,6 +1,7 @@
 .mob-menu {
   height: 503px;
-  width: 250px;
+  // width: 250px;
+  width: 90%;
   background-color: #e17992;
   position: absolute;
   top: 0;
@@ -8,8 +9,7 @@
   z-index: 3;
   padding-top: 60px;
   @media screen and (min-width: 479px) {
-    // display: none;
-    width: 250px;
+    width: 90%;
     height: 100vh;
   }
   @media screen and (min-width: 1280px) {
@@ -21,33 +21,36 @@ a {
   color: inherit;
 }
 .header-menu-btn {
+  margin: 0 auto;
   height: 44px;
   width: 209px;
   border: none;
   border-radius: 22px;
   background-color: #fff;
-  // margin-right: 9px;
   right: 21px;
   top: 60px;
   margin-bottom: 32px;
-  margin-left: 21px;
-  @media screen and (min-width: 768px) {
-  display: none;
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
- }
+}
+
 
 .mob-menu-item {
   font-weight: 700;
   font-size: 14px;
-  line-height: 18px;
+  line-height: calc(18 / 14);
   display: flex;
   align-items: center;
   width: 100%;
-
   color: #ffffff;
   // margin-bottom: 24px;
   border-top: 1px solid #e18298;
-  padding: 10px 0px 10px 21px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  padding-left: calc((21 / 250 * 100%));
   transition: color 300ms linear;
 }
 
@@ -64,4 +67,10 @@ a {
   position: absolute;
   top: 23px;
   right: 27px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: 0;
+  pointer-events: none;
 }
