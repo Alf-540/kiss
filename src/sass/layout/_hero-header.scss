@@ -388,3 +388,54 @@
     right: 97px;
   }
 }
+.cafetrucks-list__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+.cafetrucks-list__text--padding {
+  padding-left: 20px;
+}
+.cafetrucks-list__number {
+  position: relative;
+  color: $text-title-color;
+  font-family: Titan One;
+  font-style: Regular;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  z-index: 6;
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.14;
+  }
+}
+
+.cafetrucks-list__text {
+  color: #ffffff;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+.cafetrucks-list__number::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  z-index: -1;
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+
+    right: 5px;
+  }
+}
