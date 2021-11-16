@@ -2,7 +2,6 @@
   padding-top: 6px;
   position: relative;
 }
-
 .header {
   margin: 0 auto;
   height: 502px;
@@ -21,7 +20,6 @@
     height: 665px;
   }
 }
-
 .header-logo {
   width: 199px;
   @media screen and (min-width: 768px) {
@@ -34,7 +32,6 @@
     left: 36px;
   }
 }
-
 .header_navi-list {
   display: flex;
   // padding-top: 49px;
@@ -46,7 +43,6 @@
     padding-top: 49px;
   }
 }
-
 .header_navi-item {
   margin-right: 35px;
   // font-family: DM Sans;
@@ -60,7 +56,6 @@
     display: none;
   }
 }
-
 .header-burger__button {
   background: transparent;
   border: none;
@@ -79,12 +74,10 @@
     display: none;
   }
 }
-
 .header-menu-block {
   display: flex;
   align-items: center;
 }
-
 .header-buy-btn {
   height: 44px;
   width: 160px;
@@ -107,7 +100,6 @@
     right: 125px;
   }
 }
-
 .header-btn-buy-text {
   font-family: DM Sans;
   font-style: normal;
@@ -123,7 +115,6 @@
   vertical-align: center;
   padding: 12px;
 }
-
 .ellips {
   // outline: 2px solid red;
   position: absolute;
@@ -154,7 +145,6 @@
     z-index: 1;
   }
 }
-
 .header-ice-cream {
   position: absolute;
   // right: calc((32 / 320) * 100%);
@@ -168,7 +158,6 @@
     left: 594px;
   }
 }
-
 .header-title {
   font-family: Titan One;
   font-weight: 400;
@@ -187,7 +176,6 @@
     width: 300px;
   }
 }
-
 .header-title span {
   font-family: Titan One;
   font-weight: 400;
@@ -205,7 +193,6 @@
     line-height: calc(52 / 58);
   }
 }
-
 .header-title-block {
   @media screen and (max-width: 767px) {
     max-width: 218px;
@@ -224,11 +211,9 @@
     padding-top: 84px;
   }
 }
-
 .header-btn-item {
   display: flex;
 }
-
 .header-btn_prod {
   width: 63px;
   height: 24px;
@@ -252,7 +237,6 @@
     line-height: calc(18 / 14);
   }
 }
-
 .header-btn_how {
   width: 83px;
   height: 24px;
@@ -267,7 +251,6 @@
   text-align: center;
   color: #d41443;
   // color: $text-title-color;
-
   @media screen and (min-width: 1280px) {
     width: 138px;
     height: 40px;
@@ -275,7 +258,6 @@
     line-height: calc(18 / 14);
   }
 }
-
 .header-btn_block {
   position: absolute;
   top: 318px;
@@ -290,7 +272,6 @@
     padding-bottom: 112px;
   }
 }
-
 .hero-milk {
   position: absolute;
   left: 34px;
@@ -304,7 +285,6 @@
     bottom: 45px;
   }
 }
-
 .header-img-girl {
   // outline: 2px solid black;
   position: absolute;
@@ -318,7 +298,6 @@
     left: 288px;
   }
 }
-
 .hero-text {
   display: block;
   color: white;
@@ -343,7 +322,6 @@
     width: 380px;
   }
 }
-
 .hero-arrow-btn {
   // outline: 2px solid red;
   display: block;
@@ -357,7 +335,6 @@
   margin-right: 0;
   height: 26px;
   width: 26px;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -374,7 +351,6 @@
     margin-left: 180px;
   }
 }
-
 .header-cafetracks {
   display: flex;
   flex-wrap: wrap;
@@ -386,7 +362,6 @@
   right: 34px;
   align-items: center;
   margin-bottom: 13px;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
