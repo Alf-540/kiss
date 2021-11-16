@@ -1,19 +1,14 @@
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <p class="about-preheading">tradition and love</p>
         <h2 class="about-heading">how it’s made?</h2>
         <div class="about-main">
-            <img class="about-img"
-                srcset="../src/images/about/about-cow-des-1x.png 1x, ../src/images/about/about-cow-des-2x.png 2x"
-                src="../src/images/about/about-cow-des-1x.png" alt="Picture of a cow." width="280">
+            <img class="about-img" srcset="../src/images/about/about-cow-des-1x.png 1x, ../src/images/about/about-cow-des-2x.png 2x" src="../src/images/about/about-cow-des-1x.png" alt="Picture of a cow." width="280">
             <div class="about-text">
-                <p class="about-primary-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-                    cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
-                <p class="about-seckondary-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-                    Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a
-                    feugiat urna maximus. Cras massa nibh, tincidunt. </p>
+                <p class="about-primary-text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
+                <p class="about-seckondary-text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt. </p>
                 <p class="about-seckondary-text">Aliquam erat volutpat. Aenean accumsan.</p>
-                <button type="button" class="about-btn btn">Read more
+                <button type="button" class="about-btn btn" data-modal-open>Read more
                     <svg class="about-btn-icon">
                         <use href="./images/sprite.svg#icon-button-vektor"></use>
                     </svg>
@@ -22,3 +17,22 @@
         </div>
     </div>
 </section>
+<!-- --------about modal------------------------ -->
+<div class="backdrop-modal is-hidden" data-modal>
+    <div class="about-modal">
+        <button type="button" class="about-close-btn" data-modal-close>
+            <svg class="about-close-svg">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <p class="about-modal-titele">
+            Let's create a milkweed galaxy together!
+        </p>
+        <p class="about-primary-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum perferendis hic maxime culpa eligendi aspernatur vel tenetur mollitia dicta tempore, doloribus reprehenderit accusantium cum maiores unde adipisci labore suscipit assumenda ad enim
+            ut facere? Voluptas aliquid eaque ad minus a exercitationem vero, in beatae dolore dolorum et similique debitis consequatur?
+        </p>
+        <p class="about-primary-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolorem molestiae ducimus distinctio assumenda, quis minus corporis sit ad consequatur enim. Minus cumque impedit harum, iure facilis itaque vitae culpa dolore ullam quo dignissimos.
+        </p>
+    </div>
+</div>
