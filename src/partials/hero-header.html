@@ -1,5 +1,5 @@
-<header>
-  <div class="section header">
+<header class="header">
+  <div class="section header-section">
     <div class="container">
       <div class="header-menu-block">
         <div class="header_logo">
@@ -15,7 +15,7 @@
                 <a class="header_navi-link link" href="#about">About us</a>
               </li>
               <li class="header_navi-item">
-                <a class="header_navi-link link" href="#howmade">How it’s made?</a>
+                <a class="header_navi-link link" href="#advantages">How it’s made?</a>
               </li>
               <li class="header_navi-item">
                 <a class="header_navi-link link" href="#products">Our products</a>
@@ -25,7 +25,10 @@
               </li>
             </ul>
           </div>
+          <button class="header-burger__button" data-menu-open>
+
           <button class="header-burger__button">
+
             <svg width="20" height="12">
               <use href="/images/sprite.svg#icon-Burger"></use>
             </svg>
@@ -108,37 +111,39 @@
     </div>
   </div>
   </button>
-  <div class="mob-menu">
-    <button type="button" class="menu-close-btn">
-      <svg width="14" height="14">
-        <use href="/images/sprite.svg#icon-close"></use>
-      </svg>
-    </button>
-    <div class="header-menu-btn btn">
-      <p class="header-btn-buy-text">Buy now ></p>
-    </div>
-    <div class="mob-menu-content">
-      <ul class="mob-menu-list list">
-        <li class="mob-menu-item">
-          <a class="link" href="#products">Home</a>
-        </li>
-        <li class="mob-menu-item ">
-          <a class="link" href="#about">About us</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="link" href="#howmade">How it’s made?</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="link" href="#products">Our products</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="link" href="#contacts">Contacts</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="link"></a>
-        </li>
-      </ul>
-    </div>
+    <div class="mob-menu is-hidden" data-menu>
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg width="14" height="14">
+              <use href="/images/sprite.svg#icon-close"></use>
+            </svg>
+            </button>
+          <div class="header-menu-btn btn " >
+            <p class="header-btn-buy-text">Buy now ></p>
+          </div>
+          <div class="mob-menu-content">
+            <ul class="mob-menu-list list">
+               <li class="mob-menu-item">
+                <a class="link"  href="./index.html">Home</a>
+              </li>
+              <li class="mob-menu-item ">
+                <a class="link" href="#about">About us</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="link" href="#advantages">How it’s made?</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="link" href="#products">Our products</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="link" href="#contacts">Contacts</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="link"></a>
+              </li>
+            </ul>
+          </div>
+
   </div>
+
 </header>
 

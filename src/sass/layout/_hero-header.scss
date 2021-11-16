@@ -3,10 +3,13 @@
   position: relative;
 }
 .header {
+  background: #ffb8ca;
+}
+
+.header-section {
   margin: 0 auto;
   height: 502px;
   width: 320px;
-  background: #ffb8ca;
   position: relative;
   // display: flex;
   border-bottom: 1px solid #d41443;
@@ -52,10 +55,17 @@
   align-items: center;
   color: #ffffff;
   z-index: 2;
+  transition: color 300ms linear;
   @media screen and (max-width: 1279px) {
     display: none;
   }
 }
+
+.header_navi-item :hover,
+.header_navi-item :focus {
+  color: #d41443;
+}
+
 .header-burger__button {
   background: transparent;
   border: none;
@@ -85,6 +95,7 @@
   border-radius: 22px;
   background-color: #fff;
   // margin-right: 9px;
+  transition: color 300ms linear;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -100,6 +111,12 @@
     right: 125px;
   }
 }
+
+.header-buy-btn :hover,
+.header-buy-btn :focus {
+  background-color: #ecebeb;
+}
+
 .header-btn-buy-text {
   font-family: DM Sans;
   font-style: normal;

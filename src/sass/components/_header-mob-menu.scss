@@ -5,9 +5,18 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: 3;
   padding-top: 60px;
+  @media screen and (min-width: 479px) {
+    // display: none;
+    width: 250px;
+    height: 100vh;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
+
 a {
   color: inherit;
 }
@@ -22,15 +31,11 @@ a {
   top: 60px;
   margin-bottom: 32px;
   margin-left: 21px;
-  @media screen and (max-width: 767px) {
-    display: none;
+  @media screen and (min-width: 768px) {
+  display: none;
   }
-  //   @media screen and (min-width: 768px) {
-  //     position: absolute;
-  //     top: 38px;
-  //     z-index: 2;
-  //   }
-}
+ }
+
 .mob-menu-item {
   font-weight: 700;
   font-size: 14px;
@@ -38,16 +43,19 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
+
   color: #ffffff;
   // margin-bottom: 24px;
   border-top: 1px solid #e18298;
   padding: 10px 0px 10px 21px;
   transition: color 300ms linear;
 }
+
 .mob-menu-item :hover,
 .mob-menu-item :focus {
   color: #d41443;
 }
+
 .menu-close-btn {
   background: transparent;
   border: none;
