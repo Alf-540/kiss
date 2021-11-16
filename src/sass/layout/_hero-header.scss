@@ -3,6 +3,10 @@
   position: relative;
 }
 
+// .link {
+//   text-decoration: none;
+// }
+
 .header {
   margin: 0 auto;
   height: 502px;
@@ -92,7 +96,7 @@
   border-radius: 22px;
   background-color: #fff;
   // margin-right: 9px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
@@ -103,9 +107,8 @@
   }
   @media screen and (min-width: 1280px) {
     // position: absolute;
-    top: 37px;
+    top: 42px;
     right: 125px;
-    // z-index: 2;
   }
 }
 
@@ -122,23 +125,37 @@
   justify-content: center;
   color: #d41443;
   vertical-align: center;
+  padding: 12px;
 }
 
 .ellips {
+  // outline: 2px solid red;
   position: absolute;
-  // width: 346px;
-  // height: 344px;
-  left: 75px;
-  top: 82.95px;
+  margin-left: 20px;
+  width: 280px;
+  height: 344px;
   overflow: hidden;
+  background-image: url(/images/hero/hero-pink-ellipse-des-2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 1;
   @media screen and (min-width: 768px) {
     top: 31px;
     left: 307px;
+    height: 324px;
+    width: 324px;
+    background-image: url(/images/hero/hero-pink-ellipse-des-2x.png);
   }
   @media screen and (min-width: 1280px) {
     top: 52px;
     left: 475px;
+    height: 538px;
+    width: 538px;
+    // background-image: url(/images/sprite.svg#icon-Ellips-des);
+    background-image: url(/images/hero/hero-pink-ellipse-des-2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
   }
 }
 
@@ -194,7 +211,7 @@
 }
 
 .header-title-block {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     max-width: 218px;
     padding-top: 137px;
     display: block;
@@ -277,12 +294,28 @@
     padding-bottom: 112px;
   }
 }
+
+.hero-milk {
+  position: absolute;
+  left: 34px;
+  bottom: 28px;
+  // z-index: 3;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 77px;
+    bottom: 45px;
+  }
+}
+
 .header-img-girl {
   // outline: 2px solid black;
   position: absolute;
   bottom: 0;
   left: 177px;
-  @media screen and (max-width: 768px) {
+  max-width: 500px;
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 1280px) {
@@ -290,30 +323,80 @@
   }
 }
 
-.header-text {
+.hero-text {
+  display: block;
   color: white;
   width: 295px;
-  padding-left: 295px;
-  font-family: DM Sans;
   font-weight: 400;
-
   color: #ffffff;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 768px) {
-    padding-left: 100px;
-    font-family: DM Sans;
+    padding-left: 120px;
+    width: 224px;
     font-size: 8px;
     line-height: calc(12 / 8);
-    width: 207px;
     color: #ffffff;
   }
   @media screen and (min-width: 1280px) {
     display: block;
     font-size: 14px;
     line-height: calc(20 / 14);
-    padding-left: 100px;
-    width: 300px;
+    padding-left: 180px;
+    width: 380px;
+  }
+}
+
+.hero-arrow-btn {
+  // outline: 2px solid red;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  background-image: url(/images/products/products-arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0;
+  height: 26px;
+  width: 26px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    height: 18px;
+    width: 18px;
+    margin-top: 7px;
+    margin-left: 119px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 26px;
+    width: 26px;
+    margin-top: 20px;
+    margin-left: 180px;
+  }
+}
+
+.header-cafetracks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50px;
+  height: 150px;
+  position: absolute;
+  top: 94px;
+  right: 34px;
+  align-items: center;
+  margin-bottom: 13px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 92px;
+    top: 156px;
+    right: 97px;
   }
 }

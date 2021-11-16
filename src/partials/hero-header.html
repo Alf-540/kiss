@@ -8,12 +8,22 @@
           /></a>
           <!-- <div class="header-burger"> -->
           <div class="header_menu">
-            <ul class="header_navi-item">
-              <li class="header_navi-list list">Home</li>
-              <li class="header_navi-list list">About us</li>
-              <li class="header_navi-list list">How it’s made?</li>
-              <li class="header_navi-list list">Our products</li>
-              <li class="header_navi-list list">Contacts</li>
+            <ul class="header_navi-item list">
+              <li class="header_navi-list">
+                <a class="link" href="#products">Home</a>
+              </li>
+              <li class="header_navi-list">
+                <a class="link" href="#about">About us</a>
+              </li>
+              <li class="header_navi-list">
+                <a class="link" href="#howmade">How it’s made?</a>
+              </li>
+              <li class="header_navi-list">
+                <a class="link" href="#products">Our products</a>
+              </li>
+              <li class="header_navi-list">
+                <a class="link" href="#contacts">Contacts</a>
+              </li>
             </ul>
           </div>
 
@@ -88,36 +98,43 @@
           <img src="/images/hero/hero-girl-des-1x.png" alt="girl" class="header-img-girl" />
         </picture>
       </div>
-      <div class="header-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </div>
-      <div class="ellips">
+      <div class="hero-milk">
         <picture>
           <source
-            srcset="
-              /images/hero/hero-pink-ellipse-des-1x.png 1x,
-              /images/hero/hero-pink-ellipse-des-2x.png 2x
-            "
+            srcset="/images/hero/hero-milk-des-1x.png 1x, /images/hero/hero-milk-des-1x.png 2x"
             media="(min-width:1280px)"
           />
           <source
-            srcset="
-              /images/hero/hero-pink-ellipse-tab-1x.png 1x,
-              /images/hero/hero-pink-ellipse-tab-2x.png 2x
-            "
+            srcset="/images/hero/hero-milk-tab-1x.png 1x, /images/hero/hero-milk-tab-1x.png 2x"
             media="(min-width:768px)"
           />
-          <source
-            srcset="
-              /images/hero/hero-pink-ellipse-mob-1x.png  1x,
-              //images/hero/hero-pink-ellipse-mob-2x.png 2x
-            "
-            media="(min-width:480px)"
-          />
-
-          <img src="/images/hero/hero-pink-ellipse-mob-1x.png" alt="llips" />
+          <img src="/images/hero/hero-milk-des-1x.png" alt="milk" />
         </picture>
+      </div>
+
+      <div class="hero-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </div>
+
+      <!-- <div class="hero-arrow-btn"> -->
+      <button type="button" class="hero-arrow-btn"></button>
+
+      <picture>
+        <source svg class="ellips" width="538" height="538" media="(min-width:1280px)" />
+        <use href="/images/sprite.svg#icon-Ellips-des"></use>
+
+        <source />
+      </picture>
+
+      <div class="header-cafetracks">
+        <svg width="72" height="77">
+          <use href="/images/sprite.svg#icon-16"></use>
+        </svg>
+
+        <svg width="92" height="76">
+          <use href="/images/sprite.svg#icon-23"></use>
+        </svg>
       </div>
     </div>
   </div>
