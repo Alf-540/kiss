@@ -10,35 +10,7 @@
     padding-bottom: 132px;
   }
 }
-// .container {
-//   width: 320px;
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   @media screen and (min-width: 768px) {
-//     width: 768px;
-//     padding-left: 74px;
-//     padding-right: 74px;
-//   }
 
-//   @media screen and (min-width: 1280px) {
-//     width: 1280px;
-//     padding-left: 178px;
-//     padding-right: 176px;
-//   }
-// }
-// .reviews__title {
-//     position: absolute;
-//     width: 1px;
-//     height: 1px;
-//     margin: -1px;
-//     padding: 0;
-//     overflow: hidden;
-//     border: 0;
-//     clip: rect(0 0 0 0);
-
-// }
 .reviews__slide {
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
@@ -65,7 +37,6 @@
 
   text-align: center;
   margin-bottom: 30px;
-  // padding: 43px 50px 20px;
   padding: 43px 66px 26px 57px;
   background-color: #fafafa;
   @media screen and (min-width: 768px) {
@@ -87,7 +58,6 @@
     top: 28px;
     left: 61px;
     background-image: url('../images/review.svg');
-    // background-image: url("../../images/review.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -106,10 +76,6 @@
   position: relative;
   display: inline;
   padding-bottom: 6px;
-  // padding:0 12px 6px;
-  // font-weight: 500;
-  // font-size: 12px;
-  // line-height: 2.55;
   color: $main-text-color;
   background-image: repeating-linear-gradient(#e1e1e1, #e1e1e1);
   background-size: 100% 1px;
@@ -160,9 +126,6 @@
 .reviews__subtitle {
   @include font(normal, 500, 14px, 1.86, 0.03em);
 
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.86;
   text-align: center;
   color: $main-text-color;
   @media screen and (min-width: 768px) {
@@ -174,11 +137,6 @@
 }
 .reviews__slide-list {
   @include flex();
-  // display: flex;
-  // margin: 0;
-  // padding: 0;
-  // justify-content: center;
-  // align-items: center;
 }
 .reviews__slide-item {
   border-radius: 50%;
@@ -190,9 +148,6 @@
   }
   &--current {
     @include flex();
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     border-radius: 0;
     background-color: transparent;
   }
