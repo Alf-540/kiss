@@ -91,9 +91,26 @@
   height: 44px;
   width: 160px;
   border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 18);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #d41443;
+  vertical-align: center;
+  padding: 12px;
   border-radius: 22px;
   background-color: #fff;
   transition: color 300ms linear;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: $contacts-button-hover;
+  }
+  // transition: color 300ms linear;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -110,28 +127,18 @@
   }
 }
 
-.header-buy-btn :hover,
-.header-buy-btn :focus {
-  border: none;
-  border-radius: 22px;
-  background-color: #ecebeb;
+.header-btn-icon {
+  outline: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  width: 6px;
+  height: 10px;
+  z-index: 1;
+  fill: $text-title-color;
 }
 
-.header-btn-buy-text {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  // align-items: baseline;
-  text-align: center;
-  justify-content: center;
-  color: #d41443;
-  vertical-align: center;
-  padding: 12px;
-}
 .ellips {
   position: absolute;
   margin-left: 20px;
@@ -229,6 +236,12 @@
 }
 .header-btn-item {
   display: flex;
+  // &:hover,
+  // &:focus {
+  //   border: none;
+  //   border-radius: 24px;
+  //   background-color: #ecebeb;
+  // }
 }
 .header-btn_prod {
   width: 63px;
@@ -264,14 +277,8 @@
   line-height: calc(10 / 8);
   align-items: center;
   text-align: center;
+  background-color: #fff;
   color: #d41443;
-  // color: $text-title-color;
-  // &:hover,
-  // &:focus {
-  //   border: none;
-  //   border-radius: 24px;
-  //   background-color: #ecebeb;
-  // }
 
   @media screen and (min-width: 1280px) {
     width: 138px;
@@ -279,13 +286,6 @@
     font-size: 14px;
     line-height: calc(18 / 14);
   }
-}
-
-.header-btn_how :hover,
-.header-btn_how :focus {
-  border: none;
-  border-radius: 24px;
-  background-color: #ecebeb;
 }
 
 .header-btn_block {
