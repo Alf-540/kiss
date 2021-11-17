@@ -1,19 +1,19 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
+    openModalBtnPink: document.querySelector('[data-modal-open-pink]'),
     openModalBtnBeige: document.querySelector('[data-modal-open-beige]'),
     openModalBtnGreen: document.querySelector('[data-modal-open-green]'),
-    modal: document.querySelector('[data-modal]'),
+    modalPink: document.querySelector('[data-modal-pink]'),
     modalBeige: document.querySelector('[data-modal-beige]'),
     modalGreen: document.querySelector('[data-modal-green]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtnPink.addEventListener('click', toggleModalPink);
   refs.openModalBtnBeige.addEventListener('click', toggleModalBeige);
   refs.openModalBtnGreen.addEventListener('click', toggleModalGreen);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('products-list__secondary-text--hidden');
+  function toggleModalPink() {
+    refs.modalPink.classList.toggle('products-list__secondary-text--hidden-pink');
   }
 
   function toggleModalBeige() {
