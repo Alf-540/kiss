@@ -110,17 +110,14 @@
   padding: 12px;
   border-radius: 22px;
   background-color: #fff;
-<<<<<<< Updated upstream
   // margin-right: 9px;
   transition: color 300ms linear;
-=======
   cursor: pointer;
   &:hover,
   &:focus {
     background: $contacts-button-hover;
   }
   // transition: color 300ms linear;
->>>>>>> Stashed changes
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -149,8 +146,6 @@
   fill: $text-title-color;
 }
 
-<<<<<<< Updated upstream
-=======
 // .header-buy-btn :hover,
 // .header-buy-btn :focus {
 //   border: none;
@@ -173,7 +168,7 @@
 //   vertical-align: center;
 //   padding: 12px;
 // }
->>>>>>> Stashed changes
+
 .ellips {
   // outline: 2px solid red;
   position: absolute;
@@ -323,17 +318,7 @@
   text-align: center;
   background-color: #fff;
   color: #d41443;
-<<<<<<< Updated upstream
-  // color: $text-title-color;
-  // &:hover,
-  // &:focus {
-  //   border: none;
-  //   border-radius: 24px;
-  //   background-color: #ecebeb;
-  // }
-=======
 
->>>>>>> Stashed changes
   @media screen and (min-width: 1280px) {
     width: 138px;
     height: 40px;
