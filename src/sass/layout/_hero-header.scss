@@ -103,6 +103,7 @@
   padding: 12px;
   border-radius: 22px;
   background-color: #fff;
+  // margin-right: 9px;
   transition: color 300ms linear;
   cursor: pointer;
   &:hover,
@@ -110,7 +111,6 @@
     background: $contacts-button-hover;
   }
   // transition: color 300ms linear;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
