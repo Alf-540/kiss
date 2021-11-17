@@ -24,9 +24,17 @@
                 <a class="header_navi-link link" href="#contacts">Contacts</a>
               </li>
             </ul>
-          </nav>
 
+          </nav>
+          </div>
           <button class="header-burger__button" data-menu-open>
+
+          <button
+            type="button"
+            class="menu-toggle js-open-menu header-burger__button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg width="20" height="12">
               <use href="/images/sprite.svg#icon-Burger"></use>
             </svg>
@@ -34,22 +42,28 @@
           <button type="button" class="header-buy-btn btn">Buy now
             <svg class="header-btn-icon"><use href="/images/sprite.svg#icon-button-vector"></use></svg>
           </button>
+
+          <div class="header-buy-btn btn">
+            <p class="header-btn-buy-text">Buy now</p>
+          </div>
+
         </div>
       </div>
-
       <div class="header-title-block">
         <h1 class="header-title">ice cream made with <span class="passion">passion</span></h1>
       </div>
       <!-- </div> -->
-
       <div class="header-btn_block">
         <ul class="header-btn-item list">
           <li>
-            <button class="header-btn_prod btn"><a class="link" href="#products">Products</a></button>
+            <button class="header-btn_prod btn">
+              <a class="link" href="#products">Products</a>
+            </button>
           </li>
           <li>
-            <button class="header-btn_how btn" >
-            <a class="link" href="#advantages">How it’s made?</a></button>
+            <button class="header-btn_how btn">
+              <a class="link" href="#advantages">How it’s made?</a>
+            </button>
           </li>
         </ul>
       </div>
@@ -78,9 +92,8 @@
               /images/hero/hero-icecream-mob-1x.png 1x,
               /images/hero/hero-icecream-mob-2x.png 2x
             "
-            media="(min-width:480px)"
+            media="(min-width:320px)"
           />
-
           <img src="/images/hero/hero-icecream-mob-1x.png" alt="Big Photo Ice Cream" />
         </picture>
         <picture>
@@ -94,7 +107,6 @@
             srcset="/images/hero/hero-girl-tab-1x.png 1x, /images/hero/hero-girl-tab-2x.png 2x"
             media="(min-width:768px)"
           />
-
           <img src="/images/hero/hero-girl-des-1x.png" alt="girl" class="header-img-girl" />
         </picture>
       </div>
@@ -111,65 +123,66 @@
           <img src="/images/hero/hero-milk-tab-1x.png" alt="milk" />
         </picture>
       </div>
-
       <div class="hero-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et
       </div>
-
       <!-- <div class="hero-arrow-btn"> -->
       <button type="button" class="hero-arrow-btn"></button>
-
       <picture>
         <source svg class="ellips" width="538" height="538" media="(min-width:1280px)" />
         <use href="/images/sprite.svg#icon-Ellips-des"></use>
-
         <source />
       </picture>
-
       <div class="header-cafetracks">
-        <svg width="72" height="77">
-          <use href="/images/sprite.svg#icon-16"></use>
-        </svg>
-
-        <svg width="92" height="76">
-          <use href="/images/sprite.svg#icon-23"></use>
-        </svg>
+        <ul class="list cafetrucks-list">
+          <li class="cafetrucks-list__item">
+            <p class="cafetrucks-list__number">16</p>
+            <span class="cafetrucks-list__text cafetrucks-list__text--padding">cafes</span
+            ><span class="cafetrucks-list__cicrcle"></span>
+          </li>
+          <li class="cafetrucks-list__item">
+            <p class="cafetrucks-list__number">23</p>
+            <span class="cafetrucks-list__text">food trucks</span
+            ><span class="cafetrucks-list__cicrcle"></span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-  </button>
-    <div class="mob-menu is-hidden" data-menu>
-            <button type="button" class="menu-close-btn" data-menu-close>
-              <svg width="14" height="14">
-              <use href="/images/sprite.svg#icon-close"></use>
-            </svg>
-            </button>
-          <div class="header-menu-btn btn " >
-            <p class="header-btn-buy-text">Buy now ></p>
-          </div>
-          <div class="mob-menu-content">
-            <ul class="mob-menu-list list">
-              <li class="mob-menu-item">
-                <a class="link"  href="./index.html">Home</a>
-              </li>
-              <li class="mob-menu-item ">
-                <a class="link" href="#about">About us</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="link" href="#advantages">How it’s made?</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="link" href="#products">Our products</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="link" href="#contacts">Contacts</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="link"></a>
-              </li>
-            </ul>
-          </div>
+  <div class="mob-menu js-menu-container">
+    <button type="button" class="menu-close-btn js-close-menu">
+      <svg width="14" height="14">
+        <use href="/images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu">
+      <div class="header-menu-btn btn">
+        <p class="header-btn-buy-text">Buy now</p>
+      </div>
+      <div class="mob-menu-content">
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a class="link" href="./index.html">Home</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#about">About us</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#advantages">How it’s made?</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#products">Our products</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#contacts">Contacts</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </div>
-  <script src="/js/menu.js"></script>
-</header>
+  </header>
