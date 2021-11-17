@@ -5,23 +5,21 @@
 .header {
   background: #ffb8ca;
 }
-
 .header-section {
   margin: 0 auto;
   height: 502px;
-  background: #ffb8ca;
+  width: 320px;
   position: relative;
-  min-width: 320px;
   // display: flex;
   border-bottom: 1px solid #d41443;
   @media screen and (min-width: 768px) {
-    min-width: 768px;
+    width: 768px;
     height: 399px;
     border-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
-    min-width: 1280px;
-    min-height: 665px;
+    width: 1280px;
+    height: 665px;
   }
 }
 .header-logo {
@@ -38,6 +36,7 @@
 }
 .header_navi-list {
   display: flex;
+  // padding-top: 49px;
   padding-left: 230px;
   @media screen and (max-width: 479px) {
     displaay: none;
@@ -48,6 +47,7 @@
 }
 .header_navi-item {
   margin-right: 35px;
+  // font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(21 / 16);
@@ -59,12 +59,10 @@
     display: none;
   }
 }
-
 .header_navi-item :hover,
 .header_navi-item :focus {
   color: #d41443;
 }
-
 .header-burger__button {
   background: transparent;
   border: none;
@@ -126,9 +124,8 @@
     right: 125px;
   }
 }
-
 .header-btn-icon {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,8 +135,8 @@
   z-index: 1;
   fill: $text-title-color;
 }
-
 .ellips {
+  // outline: 2px solid red;
   position: absolute;
   margin-left: 20px;
   width: 280px;
@@ -171,7 +168,7 @@
 .header-ice-cream {
   position: absolute;
   // right: calc((32 / 320) * 100%);
-  right: 32px;
+  left: 117px;
   bottom: 1px;
   z-index: 2;
   @media screen and (min-width: 768px) {
@@ -240,7 +237,7 @@
   // &:focus {
   //   border: none;
   //   border-radius: 24px;
-  //   background-color: #ecebeb;
+  //   background-color: #ECEBEB;
   // }
 }
 .header-btn_prod {
@@ -257,6 +254,7 @@
   align-items: center;
   text-align: center;
   background-color: #d41443;
+  // background-color: $text-title-color;
   color: #ffffff;
   @media screen and (min-width: 1280px) {
     width: 104px;
@@ -279,7 +277,6 @@
   text-align: center;
   background-color: #fff;
   color: #d41443;
-
   @media screen and (min-width: 1280px) {
     width: 138px;
     height: 40px;
@@ -287,7 +284,6 @@
     line-height: calc(18 / 14);
   }
 }
-
 .header-btn_block {
   position: absolute;
   top: 318px;
@@ -316,6 +312,7 @@
   }
 }
 .header-img-girl {
+  // outline: 2px solid black;
   position: absolute;
   bottom: 0;
   left: 177px;
@@ -352,6 +349,7 @@
   }
 }
 .hero-arrow-btn {
+  // outline: 2px solid red;
   display: block;
   margin: 0 auto;
   cursor: pointer;
@@ -397,56 +395,5 @@
     width: 92px;
     top: 156px;
     right: 97px;
-  }
-}
-.cafetrucks-list__item:not(:last-child) {
-  margin-bottom: 14px;
-}
-.cafetrucks-list__text--padding {
-  padding-left: 20px;
-}
-.cafetrucks-list__number {
-  position: relative;
-  color: $text-title-color;
-  font-family: Titan One;
-  font-style: Regular;
-  font-size: 36px;
-  line-height: 1.13;
-  letter-spacing: 0.04em;
-  z-index: 3;
-  @media screen and (min-width: 1280px) {
-    font-size: 46px;
-    line-height: 1.14;
-  }
-}
-
-.cafetrucks-list__text {
-  color: #ffffff;
-  font-family: DM Sans;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  letter-spacing: 0.04em;
-  @media screen and (min-width: 1280px) {
-    font-size: 14px;
-    line-height: 1.3;
-  }
-}
-.cafetrucks-list__number::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #ffffff;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  z-index: -1;
-  @media screen and (min-width: 1280px) {
-    width: 30px;
-    height: 30px;
-
-    right: 5px;
   }
 }
