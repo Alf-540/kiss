@@ -261,14 +261,14 @@
     color: $bg-color-product-third;
   }
 
-  &--hidden,
+  &--hidden-pink,
   &--hidden-beige,
   &--hidden-green {
     opacity: 0;
     pointer-events: none;
   }
 
-  &--hidden + .products-list-button--pink,
+  &--hidden-pink + .products-list-button--pink,
   &--hidden-beige + .products-list-button--beige,
   &--hidden-green + .products-list-button--green {
     transform: rotate(0);
