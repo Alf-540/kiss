@@ -8,19 +8,25 @@
 
 .header-section {
   margin: 0 auto;
+<<<<<<< Updated upstream
   height: 502px;
   width: 320px;
   position: relative;
+=======
+  background: #ffb8ca;
+  position: relative;
+  min-width: 320px;
   // display: flex;
+>>>>>>> Stashed changes
   border-bottom: 1px solid #d41443;
   @media screen and (min-width: 768px) {
-    width: 768px;
-    height: 399px;
+    min-width: 768px;
+    min-height: 399px;
     border-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
-    width: 1280px;
-    height: 665px;
+    min-width: 1280px;
+    min-height: 665px;
   }
 }
 .header-logo {
@@ -37,7 +43,6 @@
 }
 .header_navi-list {
   display: flex;
-  // padding-top: 49px;
   padding-left: 230px;
   @media screen and (max-width: 479px) {
     displaay: none;
@@ -48,7 +53,6 @@
 }
 .header_navi-item {
   margin-right: 35px;
-  // font-family: DM Sans;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(21 / 16);
@@ -94,7 +98,6 @@
   border: none;
   border-radius: 22px;
   background-color: #fff;
-  // margin-right: 9px;
   transition: color 300ms linear;
   @media screen and (max-width: 767px) {
     display: none;
@@ -114,6 +117,8 @@
 
 .header-buy-btn :hover,
 .header-buy-btn :focus {
+  border: none;
+  border-radius: 22px;
   background-color: #ecebeb;
 }
 
@@ -133,7 +138,6 @@
   padding: 12px;
 }
 .ellips {
-  // outline: 2px solid red;
   position: absolute;
   margin-left: 20px;
   width: 280px;
@@ -165,7 +169,7 @@
 .header-ice-cream {
   position: absolute;
   // right: calc((32 / 320) * 100%);
-  left: 117px;
+  right: 32px;
   bottom: 1px;
   z-index: 2;
   @media screen and (min-width: 768px) {
@@ -245,7 +249,6 @@
   align-items: center;
   text-align: center;
   background-color: #d41443;
-  // background-color: $text-title-color;
   color: #ffffff;
   @media screen and (min-width: 1280px) {
     width: 104px;
@@ -268,6 +271,13 @@
   text-align: center;
   color: #d41443;
   // color: $text-title-color;
+  // &:hover,
+  // &:focus {
+  //   border: none;
+  //   border-radius: 24px;
+  //   background-color: #ecebeb;
+  // }
+
   @media screen and (min-width: 1280px) {
     width: 138px;
     height: 40px;
@@ -275,6 +285,14 @@
     line-height: calc(18 / 14);
   }
 }
+
+.header-btn_how :hover,
+.header-btn_how :focus {
+  border: none;
+  border-radius: 24px;
+  background-color: #ecebeb;
+}
+
 .header-btn_block {
   position: absolute;
   top: 318px;
@@ -303,7 +321,6 @@
   }
 }
 .header-img-girl {
-  // outline: 2px solid black;
   position: absolute;
   bottom: 0;
   left: 177px;
@@ -340,7 +357,6 @@
   }
 }
 .hero-arrow-btn {
-  // outline: 2px solid red;
   display: block;
   margin: 0 auto;
   cursor: pointer;
