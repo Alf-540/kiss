@@ -1,6 +1,5 @@
 <header class="header">
   <div class="section header-section">
-
     <div class="container">
       <div class="header-menu-block">
         <div class="header_logo">
@@ -27,16 +26,17 @@
               </li>
             </ul>
           </div>
-          <button class="header-burger__button" data-menu-open>
-
-          <button class="header-burger__button">
-
+          <button
+            class="header-burger__button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg width="20" height="12">
               <use href="/images/sprite.svg#icon-Burger"></use>
             </svg>
           </button>
           <div class="header-buy-btn btn">
-            <p class="header-btn-buy-text">Buy now ></p>
+            <p class="header-btn-buy-text">Buy now</p>
           </div>
         </div>
       </div>
@@ -47,11 +47,14 @@
       <div class="header-btn_block">
         <ul class="header-btn-item list">
           <li>
-            <button class="header-btn_prod btn"><a class="link" href="#products">Products</a></button>
+            <button class="header-btn_prod btn">
+              <a class="link" href="#products">Products</a>
+            </button>
           </li>
           <li>
-            <button class="header-btn_how btn" >
-            <a class="link" href="#advantages">How it’s made?</a></button>
+            <button class="header-btn_how btn">
+              <a class="link" href="#advantages">How it’s made?</a>
+            </button>
           </li>
         </ul>
       </div>
@@ -138,40 +141,39 @@
       </div>
     </div>
   </div>
-  </button>
-    <div class="mob-menu is-hidden" data-menu>
-            <button type="button" class="menu-close-btn" data-menu-close>
-              <svg width="14" height="14">
-              <use href="/images/sprite.svg#icon-close"></use>
-            </svg>
-            </button>
-          <div class="header-menu-btn btn " >
-            <p class="header-btn-buy-text">Buy now ></p>
-          </div>
-          <div class="mob-menu-content">
-            <ul class="mob-menu-list list">
-               <li class="mob-menu-item">
-                <a class="link"  href="./index.html">Home</a>
-              </li>
-              <li class="mob-menu-item ">
-                <a class="link" href="#about">About us</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="link" href="#advantages">How it’s made?</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="link" href="#products">Our products</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="link" href="#contacts">Contacts</a>
-              </li>
-              <li class="mob-menu-item">
-                <a class="link"></a>
-              </li>
-            </ul>
-          </div>
-
-
+  <div class="mob-menu js-menu-container" id="mobile-menu">
+    <button type="button" class="menu-close-btn js-close-menu" data-menu-close>
+      <svg width="14" height="14">
+        <use href="/images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu">
+      <div class="header-menu-btn btn">
+        <p class="header-btn-buy-text">Buy now</p>
+      </div>
+      <div class="mob-menu-content">
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a class="link" href="./index.html">Home</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#about">About us</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#advantages">How it’s made?</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#products">Our products</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#contacts">Contacts</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
   <!-- <script src="/js/menu.js"></script> -->
 </header>
