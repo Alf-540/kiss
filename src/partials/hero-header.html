@@ -4,7 +4,8 @@
       <div class="header-menu-block">
         <div class="header_logo">
           <a href="index.html" class="header-logo">
-            <img src="/images/hero/logo.png" alt="logo" /></a>
+            <img src="/images/hero/logo.png" alt="logo"
+          /></a>
           <nav class="header_menu-content">
             <ul class="header_navi-list list">
               <li class="header_navi-item">
@@ -24,10 +25,11 @@
               </li>
             </ul>
           </nav>
-
-          <button class="header-burger__button" js-open-menu>
-
-
+          <button
+            class="header-burger__button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <svg width="20" height="12">
               <use href="/images/sprite.svg#icon-Burger"></use>
             </svg>
@@ -46,22 +48,26 @@
       <div class="header-btn_block">
         <ul class="header-btn-item list">
           <li>
-            <button class="header-btn_prod btn"><a class="link" href="#products">Products</a></button>
+            <button class="header-btn_prod btn">
+              <a class="link" href="#products">Products</a>
+            </button>
           </li>
           <li>
             <button class="header-btn_how btn">
-              <a class="link" href="#advantages">How it’s made?</a></button>
+              <a class="link" href="#advantages">How it’s made?</a>
+            </button>
           </li>
         </ul>
       </div>
       <div class="header-ice-cream">
-         <picture>
+        <picture>
           <source
             srcset="
               /images/hero/hero-icecream-des-1x.png 1x,
               /images/hero/hero-icecream-des-2x.png 2x
             "
-            media="(min-width:1280px)" width="236" 
+            media="(min-width:1280px)"
+            width="236"
           />
           <source
             srcset="
@@ -76,7 +82,7 @@
               /images/hero/hero-icecream-mob-1x.png 1x,
               /images/hero/hero-icecream-mob-2x.png 2x
             "
-            media="(min-width:320px)" 
+            media="(min-width:320px)"
             width="171"
           />
 
@@ -87,10 +93,10 @@
             srcset="/images/hero/hero-girl-des-1x.png 1x, /images/hero/hero-girl-des-2x.png 2x"
             media="(min-width:1280px)"
             width="293"
-                      />
+          />
           <source
             srcset="/images/hero/hero-girl-tab-1x.png 1x, /images/hero/hero-girl-tab-2x.png 2x"
-            media="(min-width:768px)" 
+            media="(min-width:768px)"
             width="163"
           />
 
@@ -99,14 +105,15 @@
       </div>
       <div class="hero-milk">
         <picture>
-
           <source
             srcset="/images/hero/hero-milk-des-1x.png 1x, /images/hero/hero-milk-des-2x.png 2x"
-            media="(min-width:1280px)"  width="188"
+            media="(min-width:1280px)"
+            width="188"
           />
           <source
             srcset="/images/hero/hero-milk-tab-1x.png 1x, /images/hero/hero-milk-tab-2x.png 2x"
-            media="(min-width:768px)" width="124"
+            media="(min-width:768px)"
+            width="124"
           />
           <img src="/images/hero/hero-milk-tab-1x.png" alt="milk" />
         </picture>
@@ -137,7 +144,7 @@
         <source />
       </picture>
       <div class="header-cafetracks">
-         <ul class="list cafetrucks-list">
+        <ul class="list cafetrucks-list">
           <li class="cafetrucks-list__item">
             <p class="cafetrucks-list__number">16</p>
             <span class="cafetrucks-list__text cafetrucks-list__text--padding">cafes</span
@@ -148,44 +155,46 @@
             <span class="cafetrucks-list__text">food trucks</span
             ><span class="cafetrucks-list__cicrcle"></span>
           </li>
-         </ul>
-		
-     </div>
+        </ul>
+      </div>
     </div>
   </div>
-  </button>
-  <div class="mob-menu is-hidden" .js-menu-container>
-    <button type="button" class="menu-close-btn" .js-close-menu>
-
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <button type="button" class="menu-close-btn js-close-menu">
       <svg width="14" height="14">
         <use href="/images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <div class="header-menu-btn btn ">
-      <p class="header-btn-buy-text">Buy now ></p>
-    </div>
-    <div class="mob-menu-content">
-      <ul class="mob-menu-list list">
-        <li class="mob-menu-item">
-          <a class="link" href="./index.html">Home</a>
-        </li>
-        <li class="mob-menu-item ">
-          <a class="link" href="#about">About us</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="link" href="#advantages">How it’s made?</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="link" href="#products">Our products</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="link" href="#contacts">Contacts</a>
-        </li>
-        <li class="mob-menu-item">
-          <a class="link"></a>
-        </li>
-      </ul>
+    <div class="">
+      <button type="button" class="header-menu-btn btn">
+        Buy now
+        <svg class="header-btn-icon">
+          <use href="/images/sprite.svg#icon-button-vektor"></use>
+        </svg>
+      </button>
+      <div class="mob-menu-content">
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a class="link" href="./index.html">Home</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#about">About us</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#advantages">How it’s made?</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#products">Our products</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link" href="#contacts">Contacts</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="link"></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-  <script src="/js/menu.js"></script>
 </header>
+
