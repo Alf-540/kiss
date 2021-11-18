@@ -80,12 +80,19 @@
   @media screen and (min-width: 1280px) {
     display: none;
   }
+  &:hover,
+  &:focus {
+    width: 34px;
+    height: 24px;
+    transition: 300ms linear;
+  }
 }
 .header-menu-block {
   display: flex;
   align-items: center;
 }
 .header-buy-btn {
+  margin: 0 auto;
   height: 44px;
   width: 160px;
   border: none;
@@ -101,7 +108,6 @@
   padding: 12px;
   border-radius: 22px;
   background-color: #fff;
-  // margin-right: 9px;
   transition: color 300ms linear;
   cursor: pointer;
   &:hover,
@@ -119,22 +125,30 @@
     z-index: 2;
   }
   @media screen and (min-width: 1280px) {
-    // position: absolute;
     top: 42px;
     right: 125px;
   }
 }
+
+.button-arrow {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
 .header-btn-icon {
-  // outline: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 14px;
   width: 6px;
   height: 10px;
-  z-index: 1;
+  z-index: 3;
   fill: $text-title-color;
 }
+
 .ellips {
   // outline: 2px solid red;
   position: absolute;
@@ -290,6 +304,10 @@
     font-size: 14px;
     line-height: calc(18 / 14);
   }
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
 }
 .header-btn_block {
   position: absolute;
@@ -372,6 +390,11 @@
   margin-right: 0;
   height: 26px;
   width: 26px;
+  &:hover,
+  &:focus {
+    transition: all 250ms ease-in-out;
+    transform: rotate(-90deg);
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }
