@@ -72,10 +72,12 @@
   top: 23px;
   left: 281px;
   cursor: pointer;
+  transition: left 600ms linear, transform 300ms ease-in-out;
   @media screen and (min-width: 768px) {
     top: 52px;
     left: 524px;
     z-index: 3;
+    transition: top 600ms linear, transform 300ms ease-in-out;
   }
   @media screen and (min-width: 1280px) {
     display: none;
