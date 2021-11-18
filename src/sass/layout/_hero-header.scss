@@ -132,23 +132,20 @@
   }
 }
 
-.button-arrow {
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.header-btn-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 14px;
-  width: 6px;
-  height: 10px;
-  z-index: 3;
-  fill: $text-title-color;
+ .header-btn-icon {
+// outline: 1px solid red;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+margin-left: 14px;
+width: 6px;
+height: 10px;
+z-index: 1;
+fill: $text-title-color;
+   transition: background-color 250ms linear;
+  &:hover, &:focus {
+    background-color: $contacts-button-hover;
+  }
 }
 
 .ellips {
@@ -276,9 +273,13 @@
   line-height: calc(10 / 8);
   align-items: center;
   text-align: center;
-  background-color: #d41443;
+  background-color: $text-title-color;
   // background-color: $text-title-color;
+  transition: background-color 250ms linear;
   color: #ffffff;
+  &:hover, &:focus {
+    background-color: $button-second-color;
+  }
   @media screen and (min-width: 1280px) {
     width: 104px;
     height: 40px;
@@ -299,7 +300,12 @@
   align-items: center;
   text-align: center;
   background-color: #fff;
-  color: #d41443;
+  color: $text-title-color;
+
+  transition: background-color 250ms linear;
+  &:hover, &:focus {
+    background-color: $contacts-button-hover;
+  }
   @media screen and (min-width: 1280px) {
     width: 138px;
     height: 40px;
@@ -356,6 +362,7 @@
   }
 }
 .hero-text {
+  position: relative;
   display: block;
   color: white;
   width: 295px;
@@ -379,6 +386,34 @@
     width: 380px;
   }
 }
+
+
+.products-list__secondary-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 15px;
+  width: 100%;
+  transform: translate(-50%, -86%);
+  transition: all 250ms ease-in-out;
+
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: $bg-color-product-third;
+
+  &--pink {
+    color: #ffa5ba;
+  }
+
+  &--hidden-pink {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &--pink + .hero-arrow-btn {
+    transform: rotate(-90deg);
+  }
+}
 .hero-arrow-btn {
   // outline: 2px solid red;
   display: block;
@@ -392,6 +427,7 @@
   margin-right: 0;
   height: 26px;
   width: 26px;
+
   &:hover,
   &:focus {
     transition: all 250ms ease-in-out;
@@ -413,6 +449,7 @@
     margin-left: 180px;
   }
 }
+
 .header-cafetracks {
   display: flex;
   flex-wrap: wrap;
