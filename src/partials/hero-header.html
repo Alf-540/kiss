@@ -24,7 +24,10 @@
               </li>
             </ul>
           </nav>
-          <button class="header-burger__button" data-menu-open>
+
+          <button class="header-burger__button" js-open-menu>
+
+
             <svg width="20" height="12">
               <use href="/images/sprite.svg#icon-Burger"></use>
             </svg>
@@ -52,35 +55,59 @@
         </ul>
       </div>
       <div class="header-ice-cream">
-        <picture>
-          <source srcset="
+         <picture>
+          <source
+            srcset="
               /images/hero/hero-icecream-des-1x.png 1x,
               /images/hero/hero-icecream-des-2x.png 2x
-            " media="(min-width:1280px)" width="236" height="557" />
-          <source srcset="
+            "
+            media="(min-width:1280px)" width="236" 
+          />
+          <source
+            srcset="
               /images/hero/hero-icecream-tab-1x.png 1x,
               /images/hero/hero-icecream-tab-2x.png 2x
-            " media="(min-width:768px)" width="143" height="336" />
-          <source srcset="
+            "
+            media="(min-width:768px)"
+            width="143"
+          />
+          <source
+            srcset="
               /images/hero/hero-icecream-mob-1x.png 1x,
               /images/hero/hero-icecream-mob-2x.png 2x
-            " media="(min-width:480px)" width="171" height="410" />
+            "
+            media="(min-width:320px)" 
+            width="171"
+          />
+
           <img src="/images/hero/hero-icecream-mob-1x.png" alt="Big Photo Ice Cream" />
         </picture>
         <picture>
-          <source srcset="/images/hero/hero-girl-des-1x.png 1x, /images/hero/hero-girl-des-2x.png 2x"
-            media="(min-width:1280px)" width="293" height="232" />
-          <source srcset="/images/hero/hero-girl-tab-1x.png 1x, /images/hero/hero-girl-tab-2x.png 2x"
-            media="(min-width:768px)" />
+          <source
+            srcset="/images/hero/hero-girl-des-1x.png 1x, /images/hero/hero-girl-des-2x.png 2x"
+            media="(min-width:1280px)"
+            width="293"
+                      />
+          <source
+            srcset="/images/hero/hero-girl-tab-1x.png 1x, /images/hero/hero-girl-tab-2x.png 2x"
+            media="(min-width:768px)" 
+            width="163"
+          />
+
           <img src="/images/hero/hero-girl-des-1x.png" alt="girl" class="header-img-girl" />
         </picture>
       </div>
       <div class="hero-milk">
         <picture>
-          <source srcset="/images/hero/hero-milk-des-1x.png 1x, /images/hero/hero-milk-des-2x.png 2x"
-            media="(min-width:1280px)" />
-          <source srcset="/images/hero/hero-milk-tab-1x.png 1x, /images/hero/hero-milk-tab-2x.png 2x"
-            media="(min-width:768px)" />
+
+          <source
+            srcset="/images/hero/hero-milk-des-1x.png 1x, /images/hero/hero-milk-des-2x.png 2x"
+            media="(min-width:1280px)"  width="188"
+          />
+          <source
+            srcset="/images/hero/hero-milk-tab-1x.png 1x, /images/hero/hero-milk-tab-2x.png 2x"
+            media="(min-width:768px)" width="124"
+          />
           <img src="/images/hero/hero-milk-tab-1x.png" alt="milk" />
         </picture>
       </div>
@@ -95,18 +122,26 @@
         <source />
       </picture>
       <div class="header-cafetracks">
-        <svg width="72" height="77">
-          <use href="/images/sprite.svg#icon-16"></use>
-        </svg>
-        <svg width="92" height="76">
-          <use href="/images/sprite.svg#icon-23"></use>
-        </svg>
-      </div>
+         <ul class="list cafetrucks-list">
+          <li class="cafetrucks-list__item">
+            <p class="cafetrucks-list__number">16</p>
+            <span class="cafetrucks-list__text cafetrucks-list__text--padding">cafes</span
+            ><span class="cafetrucks-list__cicrcle"></span>
+          </li>
+          <li class="cafetrucks-list__item">
+            <p class="cafetrucks-list__number">23</p>
+            <span class="cafetrucks-list__text">food trucks</span
+            ><span class="cafetrucks-list__cicrcle"></span>
+          </li>
+         </ul>
+		
+     </div>
     </div>
   </div>
   </button>
-  <div class="mob-menu is-hidden" data-menu>
-    <button type="button" class="menu-close-btn" data-menu-close>
+  <div class="mob-menu is-hidden" .js-menu-container>
+    <button type="button" class="menu-close-btn" .js-close-menu>
+
       <svg width="14" height="14">
         <use href="/images/sprite.svg#icon-close"></use>
       </svg>
