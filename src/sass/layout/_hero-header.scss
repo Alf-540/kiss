@@ -365,8 +365,16 @@
   }
 }
 .hero-wrapper {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+ 
   position: relative;
-  width: 295px;
+  width: 224px;
+  @media screen and (min-width: 1280px) {
+  
+    width: 380px;
+  }
 }
 .hero-text {
   // position: relative;
@@ -420,8 +428,10 @@
     transform: rotate(0);
   }
 }
-.products-list__secondary-text--hidden-hero + .hero-arrow-btn {
-  transform: rotate(0);
+.products-list__secondary-text--hidden-hero {
+  overflow: hidden;
+  height: 110px;
+  background-color: $menu-bg-color;
 }
 .hero-arrow-btn {
   // outline: 2px solid red;
