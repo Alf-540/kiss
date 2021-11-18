@@ -189,6 +189,7 @@
 }
 
 .products-list__title {
+  margin-bottom: 30px;
   font-family: Titan One;
   @include font(normal, 400, 20px, 1.15, 0.04em);
   text-transform: uppercase;
@@ -196,19 +197,20 @@
   color: #ffffff;
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
     @include font(normal, 400, 30px, 1.13, 0.04em);
   }
 
   &::after {
     content: '···';
     display: block;
-    margin: 30px 0 30px 0;
+    margin-top: 30px;
 
     font-family: DM Sans;
     @include font(normal, 900, 32px, 0.2, 0.04em);
 
     @media screen and (min-width: 1280px) {
-      margin: 32px 0 32px 0;
+      margin-top: 32px;
     }
   }
 }

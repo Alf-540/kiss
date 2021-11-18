@@ -108,36 +108,48 @@
 }
 .time {
   padding-left: 0;
-}
-.contacts-working-days {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 186%;
-  /* or 22px */
-
-  color: #000000;
-
   margin-top: 25px;
-
-  margin-bottom: 0;
   @media screen and (min-width: 768px) {
     margin-top: 30px;
-    font-size: 14px;
+
     @media screen and (min-width: 1280px) {
       margin-top: 32px;
+    }
+  }
+  .contacts-working-days {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    /* or 22px */
+
+    color: #000000;
+
+    margin-bottom: 0;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
       font-size: 16px;
     }
   }
 }
+
 .contacts-working-weekends {
-  margin-top: 10px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    margin-top: 16px;
     @media screen and (min-width: 1280px) {
       font-size: 16px;
+    }
+  }
+}
+
+.time-weekends {
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    margin-top: 16px;
+    @media screen and (min-width: 1280px) {
       margin-top: 15px;
     }
   }
@@ -201,7 +213,7 @@
   @media screen and (min-width: 768px) {
     font-size: 14px;
     display: block;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 
     @media screen and (min-width: 1280px) {
       font-size: 16px;
@@ -235,7 +247,6 @@
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  margin-bottom: 20px;
 
   @media screen and (min-width: 120px) {
     margin: 0 auto;
@@ -249,6 +260,7 @@
     border-radius: 24px;
     margin-bottom: 20px;
   }
+
   @media screen and (min-width: 768px) {
     &:not(:first-child) {
       margin-left: 20px;
@@ -270,6 +282,11 @@
     &:not(:last-child) {
       margin-right: 0;
     }
+  }
+}
+.address3 {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
   }
 }
 .contacts-buttons {
@@ -375,14 +392,12 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding-bottom: 56px;
   @media screen and (min-width: 768px) {
     display: flex;
-    padding-bottom: 73px;
   }
   @media screen and (min-width: 1280px) {
     display: flex;
-    padding-bottom: 80px;
+
     justify-content: center;
   }
 }
@@ -450,5 +465,15 @@
   @media screen and (min-width: 1280px) {
     background-image: url(../images/contacts/contacts-1x.png),
       linear-gradient(to bottom, #ffffff 0%, #fff5f6 0%);
+  }
+}
+.contacts {
+  padding-bottom: 56px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 73px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    padding-bottom: 80px;
   }
 }
