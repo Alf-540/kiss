@@ -132,18 +132,19 @@
   }
 }
 
- .header-btn-icon {
-// outline: 1px solid red;
- display: flex;
- justify-content: center;
- align-items: center;
-margin-left: 14px;
-width: 6px;
-height: 10px;
-z-index: 1;
-fill: $text-title-color;
-   transition: background-color 250ms linear;
-  &:hover, &:focus {
+.header-btn-icon {
+  // outline: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  width: 6px;
+  height: 10px;
+  z-index: 1;
+  fill: transparent;
+  transition: background-color 250ms linear;
+  &:hover,
+  &:focus {
     background-color: $contacts-button-hover;
   }
 }
@@ -277,7 +278,8 @@ fill: $text-title-color;
   // background-color: $text-title-color;
   transition: background-color 250ms linear;
   color: #ffffff;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $button-second-color;
   }
   @media screen and (min-width: 1280px) {
@@ -303,7 +305,8 @@ fill: $text-title-color;
   color: $text-title-color;
 
   transition: background-color 250ms linear;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $contacts-button-hover;
   }
   @media screen and (min-width: 1280px) {
@@ -386,7 +389,6 @@ fill: $text-title-color;
     width: 380px;
   }
 }
-
 
 .products-list__secondary-text {
   position: absolute;
